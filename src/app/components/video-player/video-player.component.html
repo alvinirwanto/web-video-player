@@ -1,0 +1,25 @@
+<div class="video__container">
+    <div class="video__container_title">
+        <i class="bi bi-film"></i>
+        <h5 class="video__title">Web Video Player</h5>
+    </div>
+    <div class="video__container_video">
+        <video
+            #videoPlayer
+            id="myVideo"
+            class="video-js"
+            controls
+            preload="auto"
+        >
+            <source [src]="videoLink" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video__container_button">
+        <i class="bi bi-fast-forward" (click)="jumpForward()"></i>
+        <i class="bi bi-play" *ngIf="isPaused" (click)="playVideo()"></i>
+        <i class="bi bi-pause" *ngIf="!isPaused" (click)="pauseVideo()"></i>
+        <i class="bi bi-arrow-counterclockwise" (click)="restartVideo()"></i>
+    </div>
+</div>

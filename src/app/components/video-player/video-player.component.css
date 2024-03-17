@@ -1,0 +1,70 @@
+.video-js {
+    height: 65vh;
+    width: 70vw;
+}
+
+.video__container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.video__container_video {
+    border-radius: 0.7rem;
+    overflow: clip;
+}
+
+.video__container_button {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    background: #010001;
+    padding: 0 3rem;
+    border-radius: 0.5rem;
+}
+
+.video__container_button i {
+    cursor: pointer;
+    color: white;
+}
+
+.bi-play,
+.bi-pause {
+    font-size: 3rem;
+}
+
+.bi-fast-forward {
+    font-size: 1.5rem;
+}
+
+.bi-arrow-counterclockwise {
+    font-size: 1.5rem;
+}
+
+.video__container_title {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: black;
+}
+
+/* Media query for tablets (landscape and portrait) */
+@media screen and (max-width: 1024px) {
+    .video-js {
+        height: 35vh;
+        width: 85vw;
+    }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 767px) {
+    .video-js {
+        height: 25vh;
+        width: 90vw;
+    }
+}
